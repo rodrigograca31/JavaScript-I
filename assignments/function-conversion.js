@@ -52,3 +52,11 @@ exampleArray = [1, 2, 3, 4];
 const triple = exampleArray.map((num) => num * 3)
 
 console.log(triple);
+
+
+function calculator(cb, param1, param2) {
+	// return window["add"](param1, param2);
+	return cb(param1, param2);
+}
+
+console.log(calculator(add, 4, 5));
